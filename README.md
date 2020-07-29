@@ -1,1 +1,1 @@
-# spring-boot-security-jwt
+# spring-boot-security-jwt-AWS-EC2
