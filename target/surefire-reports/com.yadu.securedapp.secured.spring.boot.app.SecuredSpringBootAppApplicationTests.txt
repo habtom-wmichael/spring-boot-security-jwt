@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.yadu.securedapp.secured.spring.boot.app.SecuredSpringBootAppApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.11 s - in com.yadu.securedapp.secured.spring.boot.app.SecuredSpringBootAppApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.574 s - in com.yadu.securedapp.secured.spring.boot.app.SecuredSpringBootAppApplicationTests

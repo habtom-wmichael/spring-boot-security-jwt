@@ -36,7 +36,7 @@ public class HomeController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<UserCredentialResponse> login(@RequestBody UserCredential userCredential) throws Exception {
+    public ResponseEntity<?> login(@RequestBody UserCredential userCredential) throws Exception {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(userCredential.getUserName(), userCredential.getPassword())
@@ -49,7 +49,7 @@ public class HomeController {
         UserDetails userDetails =userdetailService.loadUserByUsername(userCredential.getUserName());
         System.out.println(userDetails);
         String jwt=jwtUtility.generateToken(userDetails);
-        return new ResponseEntity<>(new UserCredentialResponse(jwt), HttpStatus.OK);
+        return ResponseEntity.ok(new UserCredentialResponse(jwt));
     }
 
 }
